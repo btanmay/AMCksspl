@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">AndroidApp</string>
+    <array name="asset">
+        <item>ASSET</item>
+
+        <item>DESKTOP</item>
+        <item>LAPTOP</item>
+        <item>PRINTER</item>
+        <item>NETWORKING DIVICES</item>
+    </array>
+
+
+    <array name="devicecompany">
+        <item>DEVICE COMPANY</item>
+
+        <item>DELL</item>
+        <item>LENOVO</item>
+        <item>SONI</item>
+        <item>APPLE</item>
+        <item>HP</item>
+        <item>MICROSOFT</item>
+
+
+    </array>
+
+    <array name="quantity">
+        <item>DEVICE COMPANY</item>
+
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+        <item>six</item>
+
+
+    </array>
+
+</resources>
