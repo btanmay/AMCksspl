@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".tickets"></activity>
+        <activity android:name=".ClientDetail"></activity>
+        <activity android:name=".AdminProfileList">
+
+
+        </activity>
+        <activity android:name=".tickets" />
         <activity android:name=".AndroidMain1" />
         <activity android:name=".AndroidMain">
             <intent-filter>

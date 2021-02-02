@@ -64,6 +64,9 @@ public class MainActivity extends AppCompatActivity
                 ListAdapter adapter=new ListAdapter(MainActivity.this,clientList);
                 myListView.setAdapter(adapter);
 
+
+
+
             }
 
             @Override
@@ -72,6 +75,7 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
+
 
     }
 

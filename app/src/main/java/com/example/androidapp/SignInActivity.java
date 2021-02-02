@@ -62,7 +62,7 @@ public class SignInActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 progressDialog.dismiss();
                                 if (task. isSuccessful()){
-                                    Intent intent = new Intent(SignInActivity.this , MainActivity.class);
+                                    Intent intent = new Intent(SignInActivity.this , AdminProfileList.class);
                                        startActivity(intent);
 
                                 }
@@ -92,7 +92,7 @@ public class SignInActivity extends AppCompatActivity {
         });
 
         if (auth.getCurrentUser()!=null){
-            Intent intent = new Intent(SignInActivity.this, MainActivity.class);
+            Intent intent = new Intent(SignInActivity.this, AdminProfileList.class);
             startActivity(intent);
         }
 
@@ -136,7 +136,7 @@ public class SignInActivity extends AppCompatActivity {
                             Users users = new Users();
 
 
-                            Intent intent = new Intent(SignInActivity.this,MainActivity.class);
+                            Intent intent = new Intent(SignInActivity.this,AdminProfileList.class);
                             startActivity(intent);
                             Toast.makeText(SignInActivity.this,"Sign In with Google ", Toast.LENGTH_SHORT).show();
                            // updateUI(user);

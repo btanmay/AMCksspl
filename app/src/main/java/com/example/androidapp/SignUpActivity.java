@@ -40,8 +40,8 @@ public class SignUpActivity extends AppCompatActivity {
             public void onClick(View view) {
                 progressDialog.show();
 
-                auth.createUserWithEmailAndPassword(binding.email.getText().toString(), binding.pass.getText().toString()).
-                        addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                auth.createUserWithEmailAndPassword(binding.email.getText().toString(), binding.pass.getText().toString())
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
