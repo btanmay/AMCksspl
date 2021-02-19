@@ -61,8 +61,6 @@ public class MainActivity extends AppCompatActivity
                     Client client=clientDataSnap.getValue(Client.class);
                     clientList.add(client);
                 }
-                ListAdapter adapter=new ListAdapter(MainActivity.this,clientList);
-                myListView.setAdapter(adapter);
 
 
 
@@ -97,7 +95,6 @@ public class MainActivity extends AppCompatActivity
                 Intent intent = new Intent(MainActivity.this, SignInActivity.class);
                 startActivity(intent);
                 break;
-
         }
         return super.onOptionsItemSelected(item);
     }

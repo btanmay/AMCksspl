@@ -9,11 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-        <activity android:name=".ClientDetail"></activity>
-        <activity android:name=".AdminProfileList">
+        <activity android:name=".TicketRetriveActivity">
 
 
         </activity>
+        <activity android:name=".TicketActivity" />
+        <activity android:name=".TechnicianRetrive" />
+        <activity android:name=".TechnicianActivity" />
+        <activity android:name=".ClientDetail" />
+        <activity android:name=".AdminProfileList" />
         <activity android:name=".tickets" />
         <activity android:name=".AndroidMain1" />
         <activity android:name=".AndroidMain">
@@ -22,6 +26,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
         <activity android:name=".SignInActivity" />
         <activity android:name=".SignUpActivity" />

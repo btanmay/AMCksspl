@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        >
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="FULL NAME"
+            android:layout_marginTop="5dp"
+            android:padding="7dp"
+            android:background="@drawable/box"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:background="@drawable/box"
+            android:hint="ADDRESS"
+            android:layout_marginTop="9dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone Number"
+            android:textSize="24sp"
+            android:id="@+id/txt_number"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/box"
+            android:padding="7dp"
+            android:inputType="phone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <EditText
+                android:id="@+id/AS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Asset"/>
+
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DS"
+                android:text="Desktop"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LP"
+                android:text="Laptop"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+
+                />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PT"
+                android:text="Printer"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+
+                />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ND"
+                android:text="Network Devices"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/box"
+            android:gravity="start"
+            android:hint="Description"
+            android:padding="1dp"
+            android:layout_marginTop="1dp"
+            />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5sp"
+            android:textColor="@color/black"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

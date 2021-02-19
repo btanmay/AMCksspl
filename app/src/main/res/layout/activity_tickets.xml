@@ -37,29 +37,50 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:background="@drawable/edittext_bg"
-            android:hint="ADDRESS"
+            android:hint="Address"
             android:layout_marginTop="10dp"/>
 
         <EditText
+            android:id="@+id/txt_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Phone Number"
-            android:textSize="24sp"
-            android:id="@+id/txt_number"
+            android:hint="Phone Number"
+            android:textSize="16sp"
             android:layout_marginTop="10dp"
             android:background="@drawable/tickets_bg"
-            android:padding="10dp"
+            android:padding="9dp"
             android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/tickets_bg"
+            android:padding="9dp"
+            />
         <Spinner
+            android:id="@+id/asset"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:entries="@array/asset"
             android:padding="10dp"/>
 
+        <Spinner
+            android:id="@+id/priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:entries="@array/Priority"
+            android:padding="10dp"/>
+
 
 
         <EditText
+            android:id="@+id/des"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="@drawable/tickets_bg"

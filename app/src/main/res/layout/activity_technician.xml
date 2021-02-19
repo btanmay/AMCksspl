@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    >
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/ksspl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kumaarkalpa Staffing and Services Pvt.Ltd."
+            android:textStyle="bold"
+            android:textSize="18sp"
+
+            android:paddingTop="15dp"
+            android:layout_marginLeft="18dp"
+            />
+
+        <TextView
+            android:id="@+id/address_ksspl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganesh Nagar, Near Sundarabai School, Wadgaon Sheri,Pune - 14"
+
+            android:textSize="10sp"
+            android:layout_marginLeft="34dp"/>
+
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="FULL NAME"
+            android:layout_marginTop="10dp"
+            android:padding="9dp"
+            android:background="@drawable/box"
+            />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:background="@drawable/box"
+            android:hint="ADDRESS"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/doj_linear"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/box"
+        android:padding="18dp"
+        android:layout_below="@+id/linear"
+        >
+        <TextView
+            android:id="@+id/text_doj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Date of joining"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_below="@id/linear"
+            />
+
+        <EditText
+            android:id="@+id/t_doj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_doj"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:hint="dd/mm/yyyy" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exp_linear"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/box"
+        android:padding="18dp"
+        android:layout_below="@+id/doj_linear"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Experience"
+            android:layout_marginLeft="0dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/linear"
+            android:layout_toRightOf="@+id/text_doj"/>
+
+        <NumberPicker
+            android:id="@+id/experience"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_toRightOf="@id/t_doj"
+            android:layout_below="@id/exp"
+            android:layout_marginLeft="100dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/upload_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Upload Resume:"
+        android:layout_below="@+id/exp_linear"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/uploadbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#b0bec5"
+        android:text="Upload File"
+        android:textSize="8sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/upload_resume"/>
+
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uploadbutton"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

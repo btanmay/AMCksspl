@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2,3,4">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tv_name"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_column="1"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_asset"
+
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_column="2"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_company"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_column="3"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tv_quantity"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_column="4"
+            />
+
+    </TableRow>
+
+</TableLayout>

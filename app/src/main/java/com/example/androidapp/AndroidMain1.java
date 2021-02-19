@@ -31,7 +31,6 @@ public class AndroidMain1 extends AppCompatActivity
     Button Submit;
     DatePickerDialog.OnDateSetListener setListener;
 
-
     DatabaseReference reference;
 
 
@@ -39,10 +38,6 @@ public class AndroidMain1 extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android_main1);
-
-
-
-
 
         reference= FirebaseDatabase.getInstance().getReference().child("client");
 
@@ -69,7 +64,6 @@ public class AndroidMain1 extends AppCompatActivity
            }
        });
 
-
         Date1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,7 +74,6 @@ public class AndroidMain1 extends AppCompatActivity
                         month = month + 1;
                         String date = day +"/"+ month + "/" +year;
                         Date1.setText(date);
-
 
                     }
                 },year,month,day);
@@ -95,7 +88,6 @@ public class AndroidMain1 extends AppCompatActivity
                 month = month + 1;
                 String date = day + "/" + month + "/" + year;
                 Date1.setText(date);
-
             }
         };
 
@@ -116,6 +108,7 @@ public class AndroidMain1 extends AppCompatActivity
         });
 
     }
+
     private void addClient()
     {
         String name= Name.getText().toString().trim();
@@ -162,7 +155,6 @@ public class AndroidMain1 extends AppCompatActivity
                 startActivity(intent);
                 Toast.makeText(this, "Click on Tickets", Toast.LENGTH_SHORT).show();
                 break;
-
         }
         return super.onOptionsItemSelected(item);
     }

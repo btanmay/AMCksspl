@@ -56,6 +56,7 @@ public class SignInActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 progressDialog.show();
+                Toast.makeText(SignInActivity.this, "Signin with Google", Toast.LENGTH_SHORT).show();
                 auth.signInWithEmailAndPassword(binding.mail.getText().toString(), binding.pass1.getText().toString())
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override

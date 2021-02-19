@@ -49,5 +49,14 @@ public class AndroidMain extends AppCompatActivity
             }
 
         });
+
+        Technician.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context,TechnicianActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

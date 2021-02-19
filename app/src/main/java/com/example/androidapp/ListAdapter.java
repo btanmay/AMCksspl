@@ -1,7 +1,6 @@
 package com.example.androidapp;
 
 import android.app.Activity;
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,10 +15,10 @@ import java.util.List;
 public class ListAdapter extends ArrayAdapter
 {
     private Activity mContext;
-    List<Client>clientList;
+    List<Client> clientList;
 
 
-    public ListAdapter(Activity mContext,  List<Client>clientList)
+    public ListAdapter(Activity mContext, List<Client> clientList)
     {
         super(mContext, R.layout.list_item,clientList);
 
@@ -53,4 +52,6 @@ public class ListAdapter extends ArrayAdapter
         tvEd.setText(client.getDate2());
         return listItemView;
     }
+
+
 }

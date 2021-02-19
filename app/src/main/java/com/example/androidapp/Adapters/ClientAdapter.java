@@ -3,6 +3,7 @@ package com.example.androidapp.Adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.transition.Transition;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,7 +46,7 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder
 
         Client client = list.get(position);
         holder.user.setText(client.getName());
-       /* holder.address.setText(client.getAddress());
+ /*     holder.address.setText(client.getAddress());
         holder.asset.setText(client.getAsset());
         holder.company.setText(client.getCompany());
         holder.quantity.setText(client.getQuantity());
@@ -102,6 +103,12 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder
         super(itemView);
 
         user=(TextView)itemView.findViewById(R.id.usernameList);
+        address = (TextView)itemView.findViewById(R.id.tvAddress);
+        asset = (TextView)itemView.findViewById(R.id.tvAsset);
+        company = (TextView)itemView.findViewById(R.id.tvDc);
+        quantity = (TextView)itemView.findViewById(R.id.tvQuantity);
+        date1 = (TextView)itemView.findViewById(R.id.tvSd);
+        date2 = (TextView)itemView.findViewById(R.id.tvEd);
         itemView.setClickable(true);
         itemView.setOnClickListener(this);
     }
