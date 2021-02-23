@@ -1,10 +1,15 @@
 package com.example.androidapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -124,4 +129,30 @@ public class TechnicianActivity extends AppCompatActivity {
 
 
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_technician ,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()) {
+
+            case R.id.view_ticket:
+                Toast.makeText(this, "Tickets display", Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(TechnicianActivity.this,TicketRetriveActivity.class);
+                startActivity(intent2);
+                break;
+
+        }
+
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }

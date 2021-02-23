@@ -63,7 +63,7 @@ public class AdminProfileList extends AppCompatActivity {
             case R.id.view_ticket:
                 Toast.makeText(this, "Tickets display", Toast.LENGTH_SHORT).show();
                 Intent intent2 = new Intent(AdminProfileList.this,TicketRetriveActivity.class);
-                startActivity(intent2);                                        //??????????????????
+                startActivity(intent2);
                 break;
 
         }

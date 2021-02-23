@@ -15,9 +15,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidapp.Client;
-import com.example.androidapp.ClientDetail;
+import com.example.androidapp.ProfilePage;
 import com.example.androidapp.MainActivity;
 import com.example.androidapp.Models.Users;
+import com.example.androidapp.ProfilePage;
 import com.example.androidapp.R;
 import com.squareup.picasso.Picasso;
 
@@ -117,7 +118,7 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder
     public void onClick(View view) {
         int position= getAdapterPosition();
 
-        Intent intent = new Intent(context,ClientDetail.class);
+        Intent intent = new Intent(context, ProfilePage.class);
         context.startActivity(intent);
         intent.putExtra("name",list.get(position).getName());
         intent.putExtra("address",list.get(position).getAddress());

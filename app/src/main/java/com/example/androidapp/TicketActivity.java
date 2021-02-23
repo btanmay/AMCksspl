@@ -27,7 +27,7 @@ public class TicketActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ticket);
 
-        reference = FirebaseDatabase.getInstance().getReference().child("ticket");
+        reference = FirebaseDatabase.getInstance().getReference().child("tickets");
 
         Fname=findViewById(R.id.name);
         Address=findViewById(R.id.address);
@@ -56,10 +56,11 @@ public class TicketActivity extends AppCompatActivity {
     }
 
     private void addTicket1()
-    {
+    {  //id,name,address,mobileno,asset,descriptio
         String Fname1= Fname.getText().toString().trim();
         String Address1= Address.getText().toString().trim();
         String Phno1= Phno.getText().toString().trim();
+        String De1= Deskop.getText().toString().trim();
         String Des1= Des.getText().toString().trim();
 
         if(!TextUtils.isEmpty(Fname1)&& !TextUtils.isEmpty(Address1)&& !TextUtils.isEmpty(Phno1)&& !TextUtils.isEmpty(Des1))
@@ -67,7 +68,7 @@ public class TicketActivity extends AppCompatActivity {
 
 
             String id =    reference.push().getKey();
-            Ticket2 ticket1 = new Ticket2(Fname1,Address1,Phno1,Des1);
+            Ticket ticket1 = new Ticket(id,Fname1,Address1,Phno1,De1,Des1);
             reference.child(id).setValue(ticket1);
             Toast.makeText(this,"Ticket Added",Toast.LENGTH_SHORT).show();
 

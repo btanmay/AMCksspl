@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidApp</string>
+    <string name="app_name">Asset Manager</string>
     <array name="asset">
         <item>Asset</item>
 

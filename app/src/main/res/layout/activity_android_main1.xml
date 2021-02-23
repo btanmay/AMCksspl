@@ -20,8 +20,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="WELCOME"/>
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="WELCOME"
+            android:background="#fbc02d"
+            android:gravity="center_horizontal" />
 
         <EditText
             android:id="@+id/name"
@@ -100,8 +103,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:textColor="@color/white"
-            android:text="SUBMIT" />
+            android:textColor="@color/black"
+            android:text="SUBMIT"
+            />
 
 
 

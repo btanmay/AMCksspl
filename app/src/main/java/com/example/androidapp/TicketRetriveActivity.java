@@ -19,20 +19,30 @@ import java.util.List;
 public class TicketRetriveActivity extends AppCompatActivity {
 
     ListView myListView1;
-    List<Ticket2> ticketList;
+    List<Ticket> ticketList;
     DatabaseReference ticketDBRef;
+
+    @Override
+    public void onBackPressed() {
+
+            super.onBackPressed();
+            overridePendingTransition(R.anim.slide_in_left,
+                    R.anim.slide_out_right);
+        
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ticket_retrive);
 
 
         myListView1 =findViewById(R.id.myListView1);
-        ticketList=new ArrayList<Ticket2>();
+        ticketList=new ArrayList<Ticket>();
 
-        ticketDBRef= FirebaseDatabase.getInstance().getReference().child("ticket");
+        ticketDBRef= FirebaseDatabase.getInstance().getReference().child("tickets");
         ticketDBRef.addValueEventListener(new ValueEventListener()
         {
             @Override
@@ -41,7 +51,7 @@ public class TicketRetriveActivity extends AppCompatActivity {
                 ticketList.clear();
                 for( DataSnapshot ticketDataSnap:snapshot.getChildren())
                 {
-                    Ticket2 t=ticketDataSnap.getValue(Ticket2.class);
+                    Ticket t=ticketDataSnap.getValue(Ticket.class);
                     ticketList.add(t);
 
                 }
@@ -59,5 +69,7 @@ public class TicketRetriveActivity extends AppCompatActivity {
 
             }
         });
+
+
     }
 }

@@ -19,8 +19,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="WELCOME"/>
+            android:textSize="25sp"
+            android:text="Ticket"
+            android:textStyle="bold"
+            android:background="#fbc02d"
+            />
 
         <EditText
             android:id="@+id/name"

@@ -19,8 +19,8 @@ import java.util.List;
 public class TicketListAdapter extends ArrayAdapter
 {
     private Activity mContext;
-    List<Ticket2> ticketList2;
-    public TicketListAdapter(Activity mContext, List<Ticket2> ticketList)
+    List<Ticket> ticketList2;
+    public TicketListAdapter(Activity mContext, List<Ticket> ticketList)
     {
         super(mContext, R.layout.ticket_list_item,ticketList);
         this.mContext=mContext;
@@ -40,12 +40,12 @@ public class TicketListAdapter extends ArrayAdapter
         TextView tic_phno=listItemView.findViewById(R.id.tic_phno);
         TextView tic_des=listItemView.findViewById(R.id.tic_des);
 
-        Ticket2 T = ticketList2.get(position);
+        Ticket T = ticketList2.get(position);
 
-        tic_fullname.setText(T.getFname1());
-        tic_address.setText(T.getAddress1());
-        tic_phno.setText(T.getPhno1());
-        tic_des.setText(T.getDes1());
+        tic_fullname.setText(T.getName());
+        tic_address.setText(T.getAddress());
+        tic_phno.setText(T.getMobileno());
+        tic_des.setText(T.getDescription());
 
 
         return listItemView;

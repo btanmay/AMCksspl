@@ -17,12 +17,15 @@
             android:id="@+id/ksspl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="Kumaarkalpa Staffing and Services Pvt.Ltd."
             android:textStyle="bold"
+            android:paddingLeft="5dp"
             android:textSize="18sp"
-
-            android:paddingTop="15dp"
+            android:backgroundTint="#fbc02d"
+            android:background="@drawable/box"
             android:layout_marginLeft="18dp"
+            android:layout_marginRight="10dp"
             />
 
         <TextView
@@ -156,7 +159,7 @@
         android:layout_centerHorizontal="true"
         android:text="Submit"
         android:layout_marginTop="10dp"
-        android:textColor="@color/white" />
+        android:textColor="@color/black" />
 
 
 </RelativeLayout>

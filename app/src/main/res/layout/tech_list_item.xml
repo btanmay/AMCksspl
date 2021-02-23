@@ -4,28 +4,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="5dp">
+    android:padding="5dp"
+    android:backgroundTint="#EFF54D"
+    android:background="@drawable/tickets_bg"
+    >
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:- "
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="name"
         android:textSize="18sp"/>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asset:- "
+            android:textColor="@color/black"
+
+            android:textSize="18sp"/>
     <TextView
         android:id="@+id/tvAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="name"
         android:textSize="18sp"/>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOJ:- "
+            android:textColor="@color/black"
+
+            android:textSize="18sp"/>
     <TextView
         android:id="@+id/tvDoj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="name"
         android:textSize="18sp"/>
+    </LinearLayout>
 
 
 </LinearLayout>

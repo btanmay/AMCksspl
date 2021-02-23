@@ -11,6 +11,9 @@
         android:id="@+id/myListViewtech"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="5dp"/>
+        android:padding="5dp"
+        android:dividerHeight="5dp"
+        android:divider="@android:color/transparent"
+        />
 
 </LinearLayout>

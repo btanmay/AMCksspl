@@ -4,6 +4,8 @@ public class Ticket {
 
     String id,name,address,mobileno,asset,description;
 
+    public Ticket(){}
+
     public Ticket(String id, String name, String address, String mobileno, String asset, String description) {
         this.id = id;
         this.name = name;

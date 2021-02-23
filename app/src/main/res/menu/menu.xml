@@ -2,10 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/settings"
-        android:title="Settings"/>
+        android:title="Settings"
+        />
     <item
         android:id="@+id/logout"
         android:title="Logout"/>
+
 
 
 </menu>

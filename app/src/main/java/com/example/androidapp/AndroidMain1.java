@@ -24,15 +24,12 @@ import java.util.Calendar;
 
 public class AndroidMain1 extends AppCompatActivity
 {
-
     EditText Name,Address,Date1,Date2;
     Spinner Asset,Device,Quantity;
-
     Button Submit;
     DatePickerDialog.OnDateSetListener setListener;
 
     DatabaseReference reference;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
